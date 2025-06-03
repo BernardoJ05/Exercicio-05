@@ -57,21 +57,241 @@ body{
     transition: background-color 0.3s ease;
 }
 
-.header{
-    justify-content: flex-start;
+.calculator-container{
+    width:100%;
+    max-width: 500px;
+    height: auto;
+    justify-items: center;
+    align-items: center;
 }
 
-.calculator-container{
+.display{
+    width: 100%;
+    height: 100px;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 0;
     display: flex;
-    width: 500px;
-    height: 600px;
-    border: solid;
-    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    transition: 0.5s;
+}
+
+.result{
+    width: auto;
+    margin: 10px;
+    font-size: 60px;
+    transition: 0.5s;
 }
 
 .keypad{
-    
-    background-color: var(--theme1-keypad-bg);
-
+    width: 100%;
+    height: 570px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    gap: 10px;
+    transition: 0.5s;
 }
 
+.key{
+    width: calc((100% - 40px) / 4);
+    height: 90px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.span-2{
+    width: calc(((100% - 40px) / 4) * 2 + 10px);
+    height: 100px;
+    transition: 0.5s;
+}
+
+.equals{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.theme-switcher{
+    display: flex ;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.theme-controls{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.theme-toggle{
+    width: 60px;
+    height: 20px;
+    border-radius:30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.theme-numbers{
+    display: flex;
+    width: 60px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.toggle-ball{
+    width: 19px;
+    height: 19px;
+    border-radius:50%;
+    transform: scale(.8);
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+}
+
+/*Temas*/
+/*Tema1*/
+
+body.theme1{
+    background-color: var(--theme1-bg);
+    color: var(--theme1-text);
+}
+
+body.theme1.display{
+    background-color: var(--theme1-action-bg);
+}
+
+body.theme1.keypad{
+    background-color: var(--theme1-keypad-bg);
+}
+
+body.theme1.key{
+    background-color: var(--theme1-key-bg);
+    color: var(--theme1-text);
+    border-bottom: 3px solid var(--theme1-key-shadow);
+}
+
+body.theme1.actions{
+    background-color: var(--theme1-action-bg);
+    color: var(--theme1-text);
+    border-bottom: 3px solid var(--theme1-action-shadow);
+}
+
+body.theme1.equals{
+    background-color: var(--theme1-equals-bg);
+    color: var(--theme1-text);
+    border-bottom: 3px solid var(--theme1-equals-shadow);
+}
+
+body.teme1.toggle{
+    background-color:var(--theme1-action-bg);
+}
+
+body.theme1.toggle-ball{
+    background-color: var(--theme1-action-bg);
+}
+
+/*Tema2*/
+
+body.theme2{
+    background-color: var(--theme2-bg);
+    color: var(--theme2-text);
+}
+
+body.theme2.display{
+    background-color: var(--theme2-action-bg);
+}
+
+body.theme2.keypad{
+    background-color: var(--theme2-keypad-bg);
+}
+
+body.theme2.key{
+    background-color: var(--theme2-key-bg);
+    color: var(--theme2-text);
+    border-bottom: 3px solid var(--theme2-key-shadow);
+}
+
+body.theme2.actions{
+    background-color: var(--theme2-action-bg);
+    color: var(--theme2-text);
+    border-bottom: 3px solid var(--theme2-action-shadow);
+}
+
+body.theme2.equals{
+    background-color: var(--theme2-equals-bg);
+    color: var(--theme2-text);
+    border-bottom: 3px solid var(--theme2-equals-shadow);
+}
+
+body.teme2.toggle{
+    background-color:var(--theme2-action-bg);
+}
+
+body.theme2.toggle-ball{
+    background-color: var(--theme2-action-bg);
+}
+
+/*Tema3*/
+
+body.theme3{
+    background-color: var(--theme3-bg);
+    color: var(--theme3-text);
+}
+
+body.theme3.display{
+    background-color: var(--theme3-action-bg);
+}
+
+body.theme3.keypad{
+    background-color: var(--theme3-keypad-bg);
+}
+
+body.theme3.key{
+    background-color: var(--theme3-key-bg);
+    color: var(--theme3-text);
+    border-bottom: 3px solid var(--theme3-key-shadow);
+}
+
+body.theme3.actions{
+    background-color: var(--theme3-action-bg);
+    color: var(--theme3-text);
+    border-bottom: 3px solid var(--theme3-action-shadow);
+}
+
+body.theme3.equals{
+    background-color: var(--theme3-equals-bg);
+    color: var(--theme3-text);
+    border-bottom: 3px solid var(--theme3-equals-shadow);
+}
+
+body.teme3.toggle{
+    background-color:var(--theme3-action-bg);
+}
+
+body.theme3.toggle-ball{
+    background-color: var(--theme3-action-bg);
+}
