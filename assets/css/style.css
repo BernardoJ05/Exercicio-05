@@ -31,17 +31,17 @@
 --theme2-key-text: hsl(210, 25%, 20%);
 
     /*Tema 3 (padrão) */
---theme3-bg: hsl(260, 60%, 15%);
---theme3-keypad-bg: hsl(260, 45%, 10%);
---theme3-screen-bg: hsl(255, 50%, 8%);
---theme3-key-bg: hsl(290, 50%, 60%);
---theme3-key-shadow: hsl(290, 40%, 40%);
---theme3-action-bg: hsl(200, 100%, 50%);
---theme3-action-shadow: hsl(200, 100%, 35%);
---theme3-equals-bg: hsl(48, 100%, 60%);
---theme3-equals-shadow: hsl(48, 100%, 40%);
---theme3-text: hsl(0, 0%, 100%);
---theme-key-text: hsl(270, 20%, 20%);
+--theme3-bg:  hsl(0, 0%, 87%); 
+--theme3-keypad-bg:  hsl(0, 0%, 100%);
+--theme3-screen-bg: hsl(210, 30%, 85%);     
+--theme3-key-bg: hsl(180, 40%, 80%);        
+--theme3-key-shadow: hsl(180, 30%, 65%);    
+--theme3-action-bg: hsl(300, 40%, 80%);     
+--theme3-action-shadow: hsl(300, 30%, 65%); 
+--theme3-equals-bg: hsl(40, 100%, 75%);     
+--theme3-equals-shadow: hsl(40, 90%, 60%);  
+--theme3-text: hsl(240, 10%, 20%);         
+--theme-key-text: hsl(240, 20%, 30%);       
 
 }
 
@@ -189,7 +189,7 @@ body.theme-1 .keypad{
 
 body.theme-1 .key{
     background-color: var(--theme1-key-bg);
-    color: var(--theme1-text);
+    color: var(--theme1-key-text);
     border-bottom: 3px solid var(--theme1-key-shadow);
 }
 
@@ -230,7 +230,7 @@ body.theme-2 .keypad{
 
 body.theme-2 .key{
     background-color: var(--theme2-key-bg);
-    color: var(--theme2-text);
+    color: var(--theme1-key-text);
     border-bottom: 3px solid var(--theme2-key-shadow);
 }
 
@@ -272,7 +272,7 @@ body.theme-3 .keypad{
 
 body.theme-3 .key{
     background-color: var(--theme3-key-bg);
-    color: var(--theme3-text);
+    color: var(--theme1-key-text);
     border-bottom: 3px solid var(--theme3-key-shadow);
 }
 
