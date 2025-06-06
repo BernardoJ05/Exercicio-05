@@ -18,32 +18,31 @@
     --theme1-key-text: hsl(221, 14%, 31%);
 
     /*Tema 2 (padrão) */
+--theme2-bg: hsl(210, 60%, 20%);
+--theme2-keypad-bg: hsl(210, 50%, 15%);
+--theme2-screen-bg: hsl(211, 45%, 12%);
+--theme2-key-bg: hsl(200, 40%, 80%);
+--theme2-key-shadow: hsl(200, 30%, 60%);
+--theme2-action-bg: hsl(220, 70%, 55%);
+--theme2-action-shadow: hsl(220, 60%, 40%);
+--theme2-equals-bg: hsl(195, 100%, 50%);
+--theme2-equals-shadow: hsl(195, 70%, 35%);
+--theme2-text: hsl(0, 0%, 100%);
+--theme2-key-text: hsl(210, 25%, 20%);
 
-    --theme2-bg: hsl(222, 26%, 31%);
-    --theme2-keypad-bg: hsl(223, 31%, 20%);
-    --theme2-screen-bg: hsl(224,  36%, 15%);
-    --theme2-key-bg: hsl(30, 25%, 89%);
-    --theme2key-shadow: hsl(28, 16%, 65%);
-    --theme2-action-bg: hsl(225, 21%, 49%);
-    --theme2-action-shadow: hsl(224, 28%, 35%);
-    --theme2-equals-bg: hsl(6, 63%, 50%);
-    --theme2-equals-shadow: hsl(6, 70%, 34%);
-    --theme2-text: hsl(0, 0%, 100%);
-    --theme2-key-text: hsl(221, 14%, 31%);
-    
     /*Tema 3 (padrão) */
+--theme3-bg: hsl(260, 60%, 15%);
+--theme3-keypad-bg: hsl(260, 45%, 10%);
+--theme3-screen-bg: hsl(255, 50%, 8%);
+--theme3-key-bg: hsl(290, 50%, 60%);
+--theme3-key-shadow: hsl(290, 40%, 40%);
+--theme3-action-bg: hsl(200, 100%, 50%);
+--theme3-action-shadow: hsl(200, 100%, 35%);
+--theme3-equals-bg: hsl(48, 100%, 60%);
+--theme3-equals-shadow: hsl(48, 100%, 40%);
+--theme3-text: hsl(0, 0%, 100%);
+--theme-key-text: hsl(270, 20%, 20%);
 
-    --theme3-bg: hsl(222, 26%, 31%);
-    --theme3-keypad-bg: hsl(223, 31%, 20%);
-    --theme3-screen-bg: hsl(224,  36%, 15%);
-    --theme3-key-bg: hsl(30, 25%, 89%);
-    --theme3-key-shadow: hsl(28, 16%, 65%);
-    --theme3-action-bg: hsl(225, 21%, 49%);
-    --theme3-action-shadow: hsl(224, 28%, 35%);
-    --theme3-equals-bg: hsl(6, 63%, 50%);
-    --theme3-equals-shadow: hsl(6, 70%, 34%);
-    --theme3-text: hsl(0, 0%, 100%);
-    --theme3-key-text: hsl(221, 14%, 31%);
 }
 
 body{
@@ -175,123 +174,125 @@ body{
 /*Temas*/
 /*Tema1*/
 
-body.theme1{
+body.theme-1{
     background-color: var(--theme1-bg);
     color: var(--theme1-text);
 }
 
-body.theme1.display{
+body.theme-1 .display{
     background-color: var(--theme1-action-bg);
 }
 
-body.theme1.keypad{
+body.theme-1 .keypad{
     background-color: var(--theme1-keypad-bg);
 }
 
-body.theme1.key{
+body.theme-1 .key{
     background-color: var(--theme1-key-bg);
     color: var(--theme1-text);
     border-bottom: 3px solid var(--theme1-key-shadow);
 }
 
-body.theme1.actions{
+body.theme-1 .actions{
     background-color: var(--theme1-action-bg);
     color: var(--theme1-text);
     border-bottom: 3px solid var(--theme1-action-shadow);
 }
 
-body.theme1.equals{
+body.theme-1 .equals{
     background-color: var(--theme1-equals-bg);
     color: var(--theme1-text);
     border-bottom: 3px solid var(--theme1-equals-shadow);
 }
 
-body.teme1.toggle{
-    background-color:var(--theme1-action-bg);
+body.theme-1 .theme-toggle{
+    background-color:var(--theme1-keypad-bg);
 }
 
-body.theme1.toggle-ball{
-    background-color: var(--theme1-action-bg);
+body.theme-1 .toggle-ball{
+    background-color: var(--theme1-equals-bg);
 }
 
 /*Tema2*/
 
-body.theme2{
+body.theme-2{
     background-color: var(--theme2-bg);
     color: var(--theme2-text);
 }
 
-body.theme2.display{
+body.theme-2 .display{
     background-color: var(--theme2-action-bg);
 }
 
-body.theme2.keypad{
+body.theme-2 .keypad{
     background-color: var(--theme2-keypad-bg);
 }
 
-body.theme2.key{
+body.theme-2 .key{
     background-color: var(--theme2-key-bg);
     color: var(--theme2-text);
     border-bottom: 3px solid var(--theme2-key-shadow);
 }
 
-body.theme2.actions{
+body.theme-2 .actions{
     background-color: var(--theme2-action-bg);
     color: var(--theme2-text);
     border-bottom: 3px solid var(--theme2-action-shadow);
 }
 
-body.theme2.equals{
+body.theme-2 .equals{
     background-color: var(--theme2-equals-bg);
     color: var(--theme2-text);
     border-bottom: 3px solid var(--theme2-equals-shadow);
 }
 
-body.teme2.toggle{
-    background-color:var(--theme2-action-bg);
+body.theme-2 .theme-toggle{
+    background-color:var(--theme1-keypad-bg);
 }
 
-body.theme2.toggle-ball{
-    background-color: var(--theme2-action-bg);
+body.theme-2 .toggle-ball{
+    background-color: var(--theme1-equals-bg);
+    right: 21px;
 }
 
 /*Tema3*/
 
-body.theme3{
+body.theme-3{
     background-color: var(--theme3-bg);
     color: var(--theme3-text);
 }
 
-body.theme3.display{
+body.theme-3 .display{
     background-color: var(--theme3-action-bg);
 }
 
-body.theme3.keypad{
+body.theme-3 .keypad{
     background-color: var(--theme3-keypad-bg);
 }
 
-body.theme3.key{
+body.theme-3 .key{
     background-color: var(--theme3-key-bg);
     color: var(--theme3-text);
     border-bottom: 3px solid var(--theme3-key-shadow);
 }
 
-body.theme3.actions{
+body.theme-3 .actions{
     background-color: var(--theme3-action-bg);
     color: var(--theme3-text);
     border-bottom: 3px solid var(--theme3-action-shadow);
 }
 
-body.theme3.equals{
+body.theme-3 .equals{
     background-color: var(--theme3-equals-bg);
     color: var(--theme3-text);
     border-bottom: 3px solid var(--theme3-equals-shadow);
 }
 
-body.teme3.toggle{
-    background-color:var(--theme3-action-bg);
+body.theme-3 .theme-toggle{
+    background-color:var(--theme1-keypad-bg);
 }
 
-body.theme3.toggle-ball{
-    background-color: var(--theme3-action-bg);
+body.theme-3 .toggle-ball{
+    background-color: var(--theme1-equals-bg);
+    left: 41px;
 }
