@@ -17,7 +17,7 @@ const number = document.querySelectorAll('.number');
 const operator = document.querySelectorAll('.operator');
 const equals = document.querySelector('.equals');
 const reset = document.querySelector('.span-2');
-const del = document.querySelector('.action');
+const del = document.querySelector('.actions');
 
 
 number.forEach(button => {
